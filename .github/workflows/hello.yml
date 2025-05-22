@@ -1,4 +1,4 @@
-name : Say Hello
+name: Say Hello
 
 on: [push]
 
@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      -name: Say hello
-       run: echo "Hello DevOps World!"
+      - name: Say hello
+        run: echo "Hello DevOps World!"
