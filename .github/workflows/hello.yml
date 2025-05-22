@@ -8,8 +8,5 @@ jobs:
 
     steps:
 
-      -name: checkout code
-       uses: actions/checkout@v3
-
       -name: Say hello
        run: echo "Hello DevOps World!
